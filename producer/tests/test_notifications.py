@@ -13,7 +13,7 @@ def test_create_notification():
     }
     
     response = requests.post(url+"/notifications", data=body)
-    print(response.json()['message'])
+    print(response.json()['message'])  # Notification sended successfully
     assert response.status_code == 201
     
 

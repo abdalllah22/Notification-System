@@ -10,7 +10,7 @@ def test_create_user():
         "email": "ali@gmail.com"
     }
     response = requests.post(url + "/users",data=body)
-    print(response.json()['message'])
+    print(response.json()['message'])  # User created successfully.
     assert response.status_code == 201
     
 
